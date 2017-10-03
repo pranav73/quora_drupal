@@ -1,0 +1,9 @@
+name = Quora User
+description = User roles
+core = 7.x
+package = quora
+version = 7.x-1.0
+dependencies[] = features
+features[features_api][] = api:2
+features[user_role][] = editor
+features[user_role][] = manager
