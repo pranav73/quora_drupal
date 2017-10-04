@@ -25,4 +25,3 @@ dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = rdf
 dependencies[] = quora_user
-dependencies[] = features

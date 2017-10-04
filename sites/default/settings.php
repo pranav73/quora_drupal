@@ -249,7 +249,7 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'quora_d7',
+      'database' => 'drupal7_quora',
       'username' => 'root',
       'password' => 'password',
       'host' => 'localhost',
@@ -290,7 +290,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = 'ahBoW9VLKxg8ih9Cd9gqjE-XfOAzr9y_D9LUQM4MYw4';
+$drupal_hash_salt = 'KAr0r9hnS9vQo-scrXz2Qt_8vJKS1A2VwSUhyVcRF7w';
 
 /**
  * Base URL (optional).
