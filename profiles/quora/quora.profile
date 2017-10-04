@@ -24,9 +24,10 @@ function quora_install_tasks(&$install_state) {
   return $tasks;
 }
 
-function quora_default_content() {
-  print_r(" I AM COMING HERE TO CREATE USERS");
-  drupal_set_message(" I cam here too");
+/**
+ * Implements hook_user_default_roles().
+ */
+function quora_default_users() {
   $result = db_query("SELECT rid FROM {role} where name like :id",array(':id' => 'administrator'));
     $admin_rid = $result->fetchField(0);
     $u_roles = user_roles();
