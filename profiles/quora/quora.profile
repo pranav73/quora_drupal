@@ -25,7 +25,7 @@ function quora_install_tasks(&$install_state) {
 }
 
 /**
- * Implements hook_user_default_roles().
+ *  Function for creating default users.
  */
 function quora_default_users() {
   $result = db_query("SELECT rid FROM {role} where name like :id",array(':id' => 'administrator'));
