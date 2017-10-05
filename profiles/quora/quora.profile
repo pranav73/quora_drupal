@@ -20,7 +20,7 @@ function quora_form_install_configure_form_alter(&$form, $form_state) {
  */
 function quora_install_tasks(&$install_state) {
   $tasks = array();
-  $tasks['quora_default_content'] = array();
+  $tasks['quora_default_users'] = array();
   return $tasks;
 }
 
@@ -28,13 +28,12 @@ function quora_install_tasks(&$install_state) {
  *  Function for creating default users.
  */
 function quora_default_users() {
-  $result = db_query("SELECT rid FROM {role} where name like :id",array(':id' => 'administrator'));
-    $admin_rid = $result->fetchField(0);
-    $u_roles = user_roles();
-    unset($u_roles[1]);
-    unset($u_roles[2]);
-    unset($u_roles[$admin_rid]);
-    foreach($u_roles as $key => $value) {
+  $roles = user_roles();
+  $admin_user = variable_get('user_admin_role');
+  unset($roles[$admin_user]);
+  unset($roles[DRUPAL_ANONYMOUS_RID]);
+  unset($roles[DRUPAL_AUTHENTICATED_RID]);
+    foreach($roles as $key => $value) {
       $mail = 'test-' . strtolower($value) . '@osseed.com';
       $new_user = array(
         'name' => $value,
