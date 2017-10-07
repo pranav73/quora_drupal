@@ -67,17 +67,178 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 7, ../sass/screen.scss */
+/* line 8, ../sass/screen.scss */
 .panels-flexible-column {
   background-color: #ffffff;
+  margin-left: 220px;
+  margin-top: 40px;
+  border-radius: 9px;
 }
 
-/* line 10, ../sass/screen.scss */
-.description {
+/* line 14, ../sass/screen.scss */
+.description,
+.form-required {
   display: none;
 }
 
-/* line 13, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 .password-strength {
   display: none;
+}
+
+/* line 22, ../sass/screen.scss */
+.first {
+  float: left;
+  width: 46%;
+}
+
+/* line 26, ../sass/screen.scss */
+.last {
+  float: right;
+  width: 54%;
+}
+
+/* line 30, ../sass/screen.scss */
+.quora_image {
+  margin-left: 210px;
+}
+
+/* line 33, ../sass/screen.scss */
+.quora_label {
+  letter-spacing: 1px;
+  font-size: 19px;
+  font-weight: 400;
+  margin: 8px 0 32px;
+  color: #999;
+  text-align: center;
+  word-wrap: break-word;
+  font-family: 'q_serif',Georgia,Times,"Times New Roman",serif;
+}
+
+/* line 43, ../sass/screen.scss */
+.panel-title {
+  font-weight: bold;
+  font-family: "Helvetica Neue";
+  font-size: 13px;
+  color: #333;
+}
+
+/* line 49, ../sass/screen.scss */
+.panels-flexible-region-1-centerleft {
+  border-right: thin solid silver;
+}
+
+/* line 52, ../sass/screen.scss */
+#edit-name--2, #edit-pass, #edit-field-first-name-und-0-value, #edit-field-last-name-und-0-value, #edit-mail, #edit-password {
+  color: black;
+  background-color: #F6F6F6;
+  border-radius: 3px;
+  height: 23;
+  box-sizing: border-box;
+  min-height: 27px;
+  outline: 0;
+  border: 1px solid #e2e2e2;
+  box-shadow: inset 0 1px 1px rgba(200, 200, 200, 0.3);
+  transition: border-color .2s;
+}
+
+/* line 64, ../sass/screen.scss */
+#edit-submit, #edit-submit--2 {
+  border-radius: 5px;
+  background-color: #3e78ad;
+  opacity: .5;
+  color: white;
+  height: 35;
+  width: 65;
+  margin-left: 228px;
+}
+
+/* line 73, ../sass/screen.scss */
+#edit-account {
+  width: 93%;
+}
+
+/* line 76, ../sass/screen.scss */
+.pane-formblock-user-register {
+  margin-left: 25px;
+}
+
+/* line 79, ../sass/screen.scss */
+.pane-user-login {
+  margin-left: 10px;
+}
+
+/* line 82, ../sass/screen.scss */
+#custom_text {
+  font-weight: 400;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  line-height: 1.4;
+  color: #999;
+  word-wrap: break-word;
+}
+
+/* line 90, ../sass/screen.scss */
+.pane-2 {
+  padding: 28px;
+  height: auto;
+  background-color: #f7f7f7;
+  color: #339;
+  opacity: 50;
+  font-size: 15px;
+  text-align: center;
+  border-top: 1px solid #e2e2e2;
+}
+
+/* line 100, ../sass/screen.scss */
+.pane-1 {
+  margin: 17px 0px 0px 250px;
+}
+
+/* line 103, ../sass/screen.scss */
+.panels-flexible-row-last {
+  border-top: 1px solid #e2e2e2;
+}
+
+/* line 106, ../sass/screen.scss */
+#edit-link {
+  margin-left: 168px;
+}
+
+/* line 109, ../sass/screen.scss */
+#edit-actions {
+  margin-bottom: -40px;
+}
+
+/* line 112, ../sass/screen.scss */
+#edit-actions--2 {
+  margin-top: -26px;
+}
+
+/* line 115, ../sass/screen.scss */
+.anchor_link {
+  color: #2b6dad;
+}
+
+/* line 118, ../sass/screen.scss */
+a:link {
+  color: gray;
+}
+
+/* line 121, ../sass/screen.scss */
+.form-type-textfield > label,
+.form-type-password > label {
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 129, ../sass/screen.scss */
+.form-type-item > a,
+.pane-content > a {
+  color: #2b6dad;
+  text-decoration: none;
+  font-size: 16px;
 }

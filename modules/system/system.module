@@ -122,7 +122,7 @@ function system_help($path, $arg) {
       return '<p>' . t('The uninstall process removes all data related to a module. To uninstall a module, you must first disable it on the main <a href="@modules">Modules page</a>.', array('@modules' => url('admin/modules'))) . '</p>';
     case 'admin/structure/block/manage':
       if ($arg[4] == 'system' && $arg[5] == 'powered-by') {
-        return '<p>' . t('The <em>Powered by Drupal</em> block is an optional link to the home page of the Drupal project. While there is absolutely no requirement that sites feature this link, it may be used to show support for Drupal.') . '</p>';
+        return '<p>' . t('The <em></em> block is an optional link to the home page of the Drupal project. While there is absolutely no requirement that sites feature this link, it may be used to show support for Drupal.') . '</p>';
       }
       break;
     case 'admin/config/development/maintenance':
@@ -3442,7 +3442,7 @@ function system_timezone($abbreviation = '', $offset = -1, $is_daylight_saving_t
  * @ingroup themeable
  */
 function theme_system_powered_by() {
-  return '<span>' . t('Powered by <a href="@poweredby">Drupal</a>', array('@poweredby' => 'https://www.drupal.org')) . '</span>';
+  return '<span>' . t(' <a href="@poweredby"></a>', array('@poweredby' => 'https://www.drupal.org')) . '</span>';
 }
 
 /**

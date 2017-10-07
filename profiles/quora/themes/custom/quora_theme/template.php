@@ -314,3 +314,59 @@ function quora_theme_menu_local_tasks(&$variables) {
 
   return $output;
 }
+
+// /**
+//  * Implements hook_form_alter().
+//  */
+// function quora_theme_form_alter(&$form, &$form_state, $form_id) {
+//   switch($form_id) {
+//     case 'user_register_form': // the value we stole from the rendered form
+//   $form['password'] = array(
+//     '#type' => 'password',
+//     '#title' => t('PASSWORD'),
+//     '#description' => t('Please enter your password'),
+//     '#size' => 32,
+//     '#maxlength' => 32,
+//     '#required' => TRUE,
+//     '#weight' => 70,
+//   );
+//
+//   $form['cutomtext'] = array(
+//    '#type' => 'item',
+//    '#markup' => '<div ><label>By clicking "Sign Up" you indicate that you have read and agree to the Terms of Service and Privacy Policy.</label></div>',
+//    '#weight' => 99, // Adjust so that you can place it whereever
+//    );
+//
+//    $form['link'] = array(
+//     '#type' => 'item',
+//     '#markup' => '<a href="#" name="anchor_link">Cancel</a>',
+//     '#weight' => 100, // Adjust so that you can place it whereever
+//     );
+//
+//    $form['actions']['submit']['#value'] = t('Sign Up');
+//    $form['mail']['#size'] = 30;
+//
+//    $form['field_first_name']['#prefix'] = '<div class="first">';
+//    $form['field_first_name']['#suffix'] = '</div>';
+//    $form['field_last_name']['#prefix'] = '<div class="last">';
+//    $form['field_last_name']['#suffix'] = '</div><div class="clearfix"></div>';
+//
+//
+//       break;
+//   }
+// }
+//
+// /**
+//  * Implements hook_block_alter().
+//  */
+//  function quora_theme_form_user_login_block_alter(&$form, &$form_state, $form_id) {
+//    $form['name']['#size'] = 30;
+//    $form['name']['#title'] = '';
+//    $form['name']['#attributes']['placeholder'] = 'Email';
+//    $form['pass']['#size'] = 30;
+//    $form['pass']['#title'] = '';
+//    $form['pass']['#attributes']['placeholder'] = 'Password';
+//    $markup = l(t('Forgot password?'), 'user/password');
+//    $markup = '<div class="clearfix">' . $markup . '</div>';
+//    $form['links']['#markup'] = $markup;
+// }
