@@ -5,30 +5,20 @@
 
 @import "compass/reset";
 
-.panels-flexible-column {
-  background-color: #ffffff;
-  margin-left: 220px;
-  margin-top: 40px;
-  border-radius: 9px;
+.panels-flexible-column-inside {
+   margin-top:-130px;
 }
-.description,
-.form-required  {
-
-  display: none;
-}
-.password-strength {
-  display: none;
-}
-.first {
+.first_fname {
   float:left;
   width:46%;
 }
-.last {
+.last_lname {
   float:right;
   width:54%;
 }
 .quora_image {
   margin-left: 210px;
+  margin-top: 150px;
 }
 .quora_label {
   letter-spacing: 1px;
@@ -48,6 +38,21 @@
 }
 .panels-flexible-region-1-centerleft {
   border-right:thin solid silver;
+}
+.panels-flexible-column {
+  background-color: #ffffff;
+  margin-left: 220px;
+  margin-top: 40px;
+  border-radius: 9px;
+
+}
+.description,
+.form-required  {
+
+  display: none;
+}
+.password-strength {
+  display: none;
 }
 #edit-name--2,#edit-pass,#edit-field-first-name-und-0-value,#edit-field-last-name-und-0-value,#edit-mail,#edit-password {
   color: black;
@@ -97,9 +102,6 @@
   text-align: center;
   border-top: 1px solid #e2e2e2;
 }
-.pane-1 {
-  margin: 17px 0px 0px 250px;
-}
 .panels-flexible-row-last {
   border-top: 1px solid #e2e2e2;
 }
@@ -132,3 +134,54 @@ a:link {
   text-decoration: none;
   font-size: 16px;
 }
+
+ .hybridauth-facebook {
+  width: 186% !important;
+  background-image: url("/profiles/quora/themes/custom/quora_theme/images/p3.png");
+  margin-top: 17px;
+  height: 45px;
+  opacity: 0%;
+  margin-left: 28px;
+}
+  .hybridauth-google {
+   width: 150% !important;
+   background-image: url("/profiles/quora/themes/custom/quora_theme/images/p2.png");
+   margin-top: 5px;
+   height: 56px;
+   margin-left: -129px;
+   margin-bottom: 60px;
+
+  }
+
+  .hybridauth-icon-hybridauth-32 {
+    display: block;
+    float: left;
+    width: 32px;
+    height: 50px;
+    opacity: 1;
+}
+  .panels-flexible-region-4-centerleft {
+    border-right:thin solid silver;
+}
+  .last {
+    width: 180px;
+    margin-bottom: 58px;
+}
+  .first {
+    width : 150px;
+}
+  .pane-1 {
+    margin-top: 18px;
+  }
+  .quora_chinese_language {
+    margin-left: 247px;
+    color: #2b6dad;
+  }
+  .login-by-email {
+    margin-left: 31px;
+    color: #999;
+    font-size: 15px;
+  }
+  .login-by-email > a {
+    color : #2b6dad;
+  }

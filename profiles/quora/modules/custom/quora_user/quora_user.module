@@ -7,7 +7,8 @@
  /**
   * Implements hook_form_formID_alter().
   */
- function quora_theme_form_user_register_form_alter(&$form, &$form_state, $form_id) {
+ function quora_user_form_user_register_form_alter(&$form, &$form_state, $form_id) {
+   drupal_add_js(drupal_get_path('module', 'quora_user') .'/js/quora_user.js', 'file');
 
    $form['password'] = array(
      '#type' => 'password',
@@ -27,16 +28,16 @@
 
     $form['link'] = array(
      '#type' => 'item',
-     '#markup' => '<a href="http://local.quora.com/user_login2" class="anchor_link">Cancel</a>',
+     '#markup' => '<a id="show-login-social" href="#" class="anchor_link">Cancel</a>',
      '#weight' => 100,
      );
 
     $form['actions']['submit']['#value'] = t('Sign Up');
     $form['mail']['#size'] = 30;
 
-    $form['field_first_name']['#prefix'] = '<div class="first">';
+    $form['field_first_name']['#prefix'] = '<div class="first_fname">';
     $form['field_first_name']['#suffix'] = '</div>';
-    $form['field_last_name']['#prefix'] = '<div class="last">';
+    $form['field_last_name']['#prefix'] = '<div class="last_lname">';
     $form['field_last_name']['#suffix'] = '</div><div class="clearfix"></div>';
 
    }

@@ -68,42 +68,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 8, ../sass/screen.scss */
-.panels-flexible-column {
-  background-color: #ffffff;
-  margin-left: 220px;
-  margin-top: 40px;
-  border-radius: 9px;
+.panels-flexible-column-inside {
+  margin-top: -130px;
 }
 
-/* line 14, ../sass/screen.scss */
-.description,
-.form-required {
-  display: none;
-}
-
-/* line 19, ../sass/screen.scss */
-.password-strength {
-  display: none;
-}
-
-/* line 22, ../sass/screen.scss */
-.first {
+/* line 11, ../sass/screen.scss */
+.first_fname {
   float: left;
   width: 46%;
 }
 
-/* line 26, ../sass/screen.scss */
-.last {
+/* line 15, ../sass/screen.scss */
+.last_lname {
   float: right;
   width: 54%;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 .quora_image {
   margin-left: 210px;
+  margin-top: 150px;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 .quora_label {
   letter-spacing: 1px;
   font-size: 19px;
@@ -115,7 +102,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: 'q_serif',Georgia,Times,"Times New Roman",serif;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 .panel-title {
   font-weight: bold;
   font-family: "Helvetica Neue";
@@ -123,12 +110,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #333;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 .panels-flexible-region-1-centerleft {
   border-right: thin solid silver;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
+.panels-flexible-column {
+  background-color: #ffffff;
+  margin-left: 220px;
+  margin-top: 40px;
+  border-radius: 9px;
+}
+
+/* line 49, ../sass/screen.scss */
+.description,
+.form-required {
+  display: none;
+}
+
+/* line 54, ../sass/screen.scss */
+.password-strength {
+  display: none;
+}
+
+/* line 57, ../sass/screen.scss */
 #edit-name--2, #edit-pass, #edit-field-first-name-und-0-value, #edit-field-last-name-und-0-value, #edit-mail, #edit-password {
   color: black;
   background-color: #F6F6F6;
@@ -142,7 +148,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: border-color .2s;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 #edit-submit, #edit-submit--2 {
   border-radius: 5px;
   background-color: #3e78ad;
@@ -153,22 +159,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-left: 228px;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 #edit-account {
   width: 93%;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .pane-formblock-user-register {
   margin-left: 25px;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .pane-user-login {
   margin-left: 10px;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 #custom_text {
   font-weight: 400;
   font-family: "Helvetica Neue";
@@ -178,7 +184,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   word-wrap: break-word;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .pane-2 {
   padding: 28px;
   height: auto;
@@ -190,42 +196,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top: 1px solid #e2e2e2;
 }
 
-/* line 100, ../sass/screen.scss */
-.pane-1 {
-  margin: 17px 0px 0px 250px;
-}
-
-/* line 103, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .panels-flexible-row-last {
   border-top: 1px solid #e2e2e2;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 #edit-link {
   margin-left: 168px;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 #edit-actions {
   margin-bottom: -40px;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 #edit-actions--2 {
   margin-top: -26px;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .anchor_link {
   color: #2b6dad;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 a:link {
   color: gray;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .form-type-textfield > label,
 .form-type-password > label {
   font-family: "Helvetica Neue";
@@ -235,10 +236,78 @@ a:link {
   font-weight: bold;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .form-type-item > a,
 .pane-content > a {
   color: #2b6dad;
   text-decoration: none;
   font-size: 16px;
+}
+
+/* line 138, ../sass/screen.scss */
+.hybridauth-facebook {
+  width: 186% !important;
+  background-image: url("/profiles/quora/themes/custom/quora_theme/images/p3.png");
+  margin-top: 17px;
+  height: 45px;
+  opacity: 0%;
+  margin-left: 28px;
+}
+
+/* line 146, ../sass/screen.scss */
+.hybridauth-google {
+  width: 150% !important;
+  background-image: url("/profiles/quora/themes/custom/quora_theme/images/p2.png");
+  margin-top: 5px;
+  height: 56px;
+  margin-left: -129px;
+  margin-bottom: 60px;
+}
+
+/* line 156, ../sass/screen.scss */
+.hybridauth-icon-hybridauth-32 {
+  display: block;
+  float: left;
+  width: 32px;
+  height: 50px;
+  opacity: 1;
+}
+
+/* line 163, ../sass/screen.scss */
+.panels-flexible-region-4-centerleft {
+  border-right: thin solid silver;
+}
+
+/* line 166, ../sass/screen.scss */
+.last {
+  width: 180px;
+  margin-bottom: 58px;
+}
+
+/* line 170, ../sass/screen.scss */
+.first {
+  width: 150px;
+}
+
+/* line 173, ../sass/screen.scss */
+.pane-1 {
+  margin-top: 18px;
+}
+
+/* line 176, ../sass/screen.scss */
+.quora_chinese_language {
+  margin-left: 247px;
+  color: #2b6dad;
+}
+
+/* line 180, ../sass/screen.scss */
+.login-by-email {
+  margin-left: 31px;
+  color: #999;
+  font-size: 15px;
+}
+
+/* line 185, ../sass/screen.scss */
+.login-by-email > a {
+  color: #2b6dad;
 }
