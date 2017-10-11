@@ -5,183 +5,216 @@
 
 @import "compass/reset";
 
-.panels-flexible-column-inside {
-   margin-top:-130px;
-}
-.first_fname {
-  float:left;
-  width:46%;
-}
-.last_lname {
-  float:right;
-  width:54%;
-}
-.quora_image {
-  margin-left: 210px;
-  margin-top: 150px;
-}
-.quora_label {
-  letter-spacing: 1px;
-  font-size: 19px;
-  font-weight: 400;
-  margin: 8px 0 32px;
-  color: #999;
-  text-align: center;
-  word-wrap: break-word;
-  font-family: 'q_serif',Georgia,Times,"Times New Roman",serif;
-}
-.panel-title {
-  font-weight: bold;
-  font-family: "Helvetica Neue";
-  font-size: 13px;
-  color: #333;
-}
-.panels-flexible-region-1-centerleft {
-  border-right:thin solid silver;
-}
 .panels-flexible-column {
   background-color: #ffffff;
   margin-left: 220px;
   margin-top: 40px;
   border-radius: 9px;
+    .panels-flexible-column-inside {
+       margin-top:-130px;
+       .panels-flexible-row {
+         .pane-content {
+           .quora_image {
+            margin-left: 210px;
+            margin-top: 150px;
+          }
+          .quora_label {
+            letter-spacing: 1px;
+            font-size: 19px;
+            font-weight: 400;
+            margin: 8px 0 32px;
+            color: #999;
+            text-align: center;
+            word-wrap: break-word;
+            font-family: 'q_serif',Georgia,Times,"Times New Roman",serif;
+          }
+        }
+      }
+    }
+  }
 
+  .panels-flexible-region {
+    .pane-formblock-user-register {
+      margin-left: 25px;
+      #edit-link {
+         text-align: center;
+        .anchor_link {
+          color: #2b6dad;
+        }
+      }
+      .first_fname {
+        float:left;
+        width:46%;
+      }
+      .last_lname {
+        float:right;
+        width:54%;
+      }
+      .form-wrapper {
+        width:93%;
+      }
+      .form-type-textfield > label,
+      .form-type-password > label {
+        font-family: "Helvetica Neue";
+        font-size: 14px;
+        color: #666;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .form-item {
+        #custom_text {
+          font-weight: 400;
+          font-family: "Helvetica Neue";
+          font-size: 16px;
+          line-height: 1.4;
+          color: #999;
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+
+  .panels-flexible-region {
+    .hybridauth-widget-wrapper {
+      .first {
+         width : 150px;
+        .hybridauth-facebook {
+          width: 186% !important;
+          background-image: url("/profiles/quora/themes/custom/quora_theme/images/p3.png");
+          margin-top: 17px;
+          height: 45px;
+          opacity: 1;
+          margin-left: 28px;
+        }
+      }
+      .last {
+        width: 180px;
+        margin-bottom: 58px;
+        .hybridauth-google {
+          width: 150% !important;
+          background-image: url("/profiles/quora/themes/custom/quora_theme/images/p2.png");
+          margin-top: 5px;
+          height: 56px;
+          margin-left: -129px;
+        }
+
+        .hybridauth-icon-hybridauth-32 {
+          display: block;
+          float: left;
+          width: 32px;
+          height: 50px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .panel-pane {
+    margin-bottom: 18px;
+    .login-by-email {
+      margin-left: 31px;
+      color: #999;
+      font-size: 15px;
+    }
+    .login-by-email > a {
+      color : #2b6dad;
+    }
+  }
+
+  .panels-flexible-region-inside-last {
+    .pane-1 {
+      border-bottom: 1px solid #e2e2e2;
+      margin-bottom: 0px;
+      padding: 11px;
+      .quora_chinese_language {
+        margin-left: 247px;
+        color: #2b6dad;
+      }
+    }
+    .pane-2 {
+      padding: 28px;
+      height: auto;
+      background-color: rgb(247, 247, 247);
+      color: #339;
+      opacity: 50;
+      font-size: 15px;
+      // text-align: center;
+      border-top: 1px solid #e2e2e2;
+    }
+  }
+
+  .inside {
+    .panels-flexible-row-last {
+      border-top: 1px solid #e2e2e2;
+    }
+    #edit-name--2,
+    #edit-pass,
+    #edit-field-first-name-und-0-value,
+    #edit-field-last-name-und-0-value,
+    #edit-mail,
+    #edit-password {
+      color: black;
+      background-color: #F6F6F6;
+      border-radius: 3px;
+      height: 23;
+      box-sizing: border-box;
+      min-height: 27px;
+      outline: 0;
+      border: 1px solid #e2e2e2;
+      box-shadow: inset 0 1px 1px rgba(200,200,200,0.3);
+      transition: border-color .2s;
+    }
+    #edit-submit,#edit-submit--2 {
+      border-radius: 5px;
+      background-color: #3e78ad;
+      opacity: .5;
+      color: white;
+      height: 35;
+      width: 65;
+      margin-left: 228px;
+    }
+    #edit-actions {
+      margin-bottom: -40px;
+    }
+    #edit-actions--2 {
+      margin-top: -6px;
+    }
+  }
+.panels-flexible-region-1-centerleft {
+  border-right:thin solid silver;
 }
 .description,
 .form-required  {
-
   display: none;
-}
-.password-strength {
-  display: none;
-}
-#edit-name--2,#edit-pass,#edit-field-first-name-und-0-value,#edit-field-last-name-und-0-value,#edit-mail,#edit-password {
-  color: black;
-  background-color: #F6F6F6;
-  border-radius: 3px;
-  height: 23;
-  box-sizing: border-box;
-  min-height: 27px;
-  outline: 0;
-  border: 1px solid #e2e2e2;
-  box-shadow: inset 0 1px 1px rgba(200,200,200,0.3);
-  transition: border-color .2s;
-}
-#edit-submit,#edit-submit--2 {
-  border-radius: 5px;
-  background-color: #3e78ad;
-  opacity: .5;
-  color: white;
-  height: 35;
-  width: 65;
-  margin-left: 228px;
-}
-#edit-account {
-  width:93%;
-}
-.pane-formblock-user-register {
-  margin-left: 25px;
 }
 .pane-user-login {
-  margin-left: 10px;
-}
-#custom_text {
-  font-weight: 400;
-  font-family: "Helvetica Neue";
-  font-size: 16px;
-  line-height: 1.4;
-  color: #999;
-  word-wrap: break-word;
-}
-.pane-2 {
-  padding: 28px;
-  height: auto;
-  background-color: rgb(247, 247, 247);
-  color: #339;
-  opacity: 50;
-  font-size: 15px;
-  text-align: center;
-  border-top: 1px solid #e2e2e2;
-}
-.panels-flexible-row-last {
-  border-top: 1px solid #e2e2e2;
-}
-#edit-link {
-  margin-left: 168px;
-}
-#edit-actions {
-  margin-bottom: -40px;
-}
-#edit-actions--2 {
-  margin-top: -26px;
-}
-.anchor_link {
-  color: #2b6dad;
-}
-a:link {
-  color: gray;
-}
-.form-type-textfield > label,
-.form-type-password > label {
-  font-family: "Helvetica Neue";
-  font-size: 14px;
-  color: #666;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.form-type-item > a,
-.pane-content > a {
-  color: #2b6dad;
-  text-decoration: none;
-  font-size: 16px;
-}
-
- .hybridauth-facebook {
-  width: 186% !important;
-  background-image: url("/profiles/quora/themes/custom/quora_theme/images/p3.png");
-  margin-top: 17px;
-  height: 45px;
-  opacity: 0%;
-  margin-left: 28px;
-}
-  .hybridauth-google {
-   width: 150% !important;
-   background-image: url("/profiles/quora/themes/custom/quora_theme/images/p2.png");
-   margin-top: 5px;
-   height: 56px;
-   margin-left: -129px;
-   margin-bottom: 60px;
-
+  .pane-content {
+    margin-left: 10px;
+   .clearfix {
+     a {
+      color: #929292;
+      }
+    }
   }
-
-  .hybridauth-icon-hybridauth-32 {
-    display: block;
-    float: left;
-    width: 32px;
-    height: 50px;
-    opacity: 1;
 }
   .panels-flexible-region-4-centerleft {
     border-right:thin solid silver;
 }
-  .last {
-    width: 180px;
-    margin-bottom: 58px;
+
+.pane-menu-menu-quora-footer,
+.pane-menu-menu-quora-footer2 {
+  .pane-content {
+    text-align: center;
+    .menu {
+      display: inline-flex;
+      .leaf {
+        list-style: none;
+        a {
+          color:#929292;
+          font-family: "Helvetica Neue";
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
-  .first {
-    width : 150px;
-}
-  .pane-1 {
-    margin-top: 18px;
-  }
-  .quora_chinese_language {
-    margin-left: 247px;
-    color: #2b6dad;
-  }
-  .login-by-email {
-    margin-left: 31px;
-    color: #999;
-    font-size: 15px;
-  }
-  .login-by-email > a {
-    color : #2b6dad;
-  }
