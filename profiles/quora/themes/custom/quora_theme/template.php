@@ -101,6 +101,9 @@ function quora_theme_preprocess_html(&$variables) {
       ));
     }
   }
+  drupal_add_css('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css', array(
+  'type' => 'external'
+  ));
 }
 
 /**

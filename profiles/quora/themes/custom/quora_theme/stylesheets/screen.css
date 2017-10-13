@@ -219,6 +219,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 150, ../sass/screen.scss */
 .inside #edit-name--2,
 .inside #edit-pass,
+.inside #edit-pass--2,
 .inside #edit-field-first-name-und-0-value,
 .inside #edit-field-last-name-und-0-value,
 .inside #edit-mail,
@@ -234,7 +235,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-shadow: inset 0 1px 1px rgba(200, 200, 200, 0.3);
   transition: border-color .2s;
 }
-/* line 167, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .inside #edit-submit, .inside #edit-submit--2 {
   border-radius: 5px;
   background-color: #3e78ad;
@@ -244,59 +245,80 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 65;
   margin-left: 228px;
 }
-/* line 176, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .inside #edit-actions {
   margin-bottom: -40px;
 }
-/* line 179, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .inside #edit-actions--2 {
   margin-top: -6px;
 }
 
-/* line 183, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .panels-flexible-region-1-centerleft {
   border-right: thin solid silver;
 }
 
-/* line 186, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .description,
 .form-required {
   display: none;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .pane-user-login .pane-content {
   margin-left: 10px;
 }
-/* line 194, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .pane-user-login .pane-content .clearfix a {
   color: #929292;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .panels-flexible-region-4-centerleft {
   border-right: thin solid silver;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .pane-menu-menu-quora-footer .pane-content,
 .pane-menu-menu-quora-footer2 .pane-content {
   text-align: center;
 }
-/* line 208, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .pane-menu-menu-quora-footer .pane-content .menu,
 .pane-menu-menu-quora-footer2 .pane-content .menu {
   display: inline-flex;
 }
-/* line 210, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .pane-menu-menu-quora-footer .pane-content .menu .leaf,
 .pane-menu-menu-quora-footer2 .pane-content .menu .leaf {
   list-style: none;
 }
-/* line 212, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 .pane-menu-menu-quora-footer .pane-content .menu .leaf a,
 .pane-menu-menu-quora-footer2 .pane-content .menu .leaf a {
   color: #929292;
   font-family: "Helvetica Neue";
   font-size: 14px;
+}
+
+/* line 222, ../sass/screen.scss */
+.front {
+  background-color: #FAFAFA;
+}
+/* line 225, ../sass/screen.scss */
+.front .container .block-menu {
+  background-color: #FAFAFA;
+}
+
+/* line 232, ../sass/screen.scss */
+.toolbar .page #header,
+.toolbar .page .block-superfish,
+.toolbar .page ul, .toolbar .page li {
+  background-color: white;
+}
+
+/* line 242, ../sass/screen.scss */
+.views-exposed-form .views-exposed-widget .views-widget #edit-field-tags-tid {
+  width: 254px;
 }

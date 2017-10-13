@@ -10,16 +10,10 @@
  function quora_user_form_user_register_form_alter(&$form, &$form_state, $form_id) {
    drupal_add_js(drupal_get_path('module', 'quora_user') .'/js/quora_user.js', 'file');
 
-   $form['password'] = array(
-     '#type' => 'password',
-     '#title' => t('PASSWORD'),
-     '#description' => t('Please enter your password'),
-     '#size' => 31,
-     '#maxlength' => 32,
-     '#required' => TRUE,
-     '#weight' => 70,
-   );
-
+   $form['account']['pass']['#type'] = 'password';
+   $form['account']['pass']['#title'] = 'Password';
+   $form['account']['pass']['#size'] = 35;
+   
    $form['cutomtext'] = array(
     '#type' => 'item',
     '#markup' => '<div id="custom_text"><label>By clicking "Sign Up" you indicate that you have read and agree to the Terms of Service and Privacy Policy.</label></div>',

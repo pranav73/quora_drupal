@@ -149,6 +149,7 @@
     }
     #edit-name--2,
     #edit-pass,
+    #edit-pass--2,
     #edit-field-first-name-und-0-value,
     #edit-field-last-name-und-0-value,
     #edit-mail,
@@ -214,6 +215,32 @@
           font-family: "Helvetica Neue";
           font-size: 14px;
         }
+      }
+    }
+  }
+}
+.front {
+  background-color: #FAFAFA;
+  .container {
+    .block-menu {
+      background-color: #FAFAFA;
+    }
+  }
+}
+.toolbar {
+  .page {
+    #header,
+    .block-superfish,
+    ul,li {
+          background-color: white;
+    }
+  }
+}
+.views-exposed-form {
+  .views-exposed-widget {
+    .views-widget {
+      #edit-field-tags-tid {
+        width: 254px;
       }
     }
   }
