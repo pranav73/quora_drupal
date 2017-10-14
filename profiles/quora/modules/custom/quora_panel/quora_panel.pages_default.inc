@@ -5,6 +5,112 @@
  */
 
 /**
+ * Implements hook_default_page_manager_handlers().
+ */
+function quora_panel_default_page_manager_handlers() {
+  $export = array();
+
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'node_edit__panel_context_6aab83dd-4b10-42bb-9ac5-ea2d45aa668e';
+  $handler->task = 'node_edit';
+  $handler->subtask = '';
+  $handler->handler = 'panel_context';
+  $handler->weight = 0;
+  $handler->conf = array(
+    'title' => 'Bg_image',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'name' => '',
+  );
+  $display = new panels_display();
+  $display->layout = 'twocol_bricks';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'top' => NULL,
+      'left_above' => NULL,
+      'right_above' => NULL,
+      'middle' => NULL,
+      'left_below' => NULL,
+      'right_below' => NULL,
+      'bottom' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '7750b3a0-8d15-4f4e-b4a8-b215e80a14a2';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'node_edit__panel_context_6aab83dd-4b10-42bb-9ac5-ea2d45aa668e';
+  $display->content = array();
+  $display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-a83d513d-3194-4012-bf64-dbf17a591c1e';
+  $pane->panel = 'left_above';
+  $pane->type = 'node_form_title';
+  $pane->subtype = 'node_form_title';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'context' => 'argument_node_edit_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+    'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = 'a83d513d-3194-4012-bf64-dbf17a591c1e';
+  $display->content['new-a83d513d-3194-4012-bf64-dbf17a591c1e'] = $pane;
+  $display->panels['left_above'][0] = 'new-a83d513d-3194-4012-bf64-dbf17a591c1e';
+  $pane = new stdClass();
+  $pane->pid = 'new-611f22f4-c950-4875-8626-47e38180b358';
+  $pane->panel = 'right_above';
+  $pane->type = 'entity_form_field';
+  $pane->subtype = 'node:body';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => '',
+    'formatter' => '',
+    'context' => 'argument_node_edit_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+    'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '611f22f4-c950-4875-8626-47e38180b358';
+  $display->content['new-611f22f4-c950-4875-8626-47e38180b358'] = $pane;
+  $display->panels['right_above'][0] = 'new-611f22f4-c950-4875-8626-47e38180b358';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-a83d513d-3194-4012-bf64-dbf17a591c1e';
+  $handler->conf['display'] = $display;
+  $export['node_edit__panel_context_6aab83dd-4b10-42bb-9ac5-ea2d45aa668e'] = $handler;
+
+  return $export;
+}
+
+/**
  * Implements hook_default_page_manager_pages().
  */
 function quora_panel_default_page_manager_pages() {
@@ -80,6 +186,7 @@ function quora_panel_default_page_manager_pages() {
           0 => 3,
           1 => 'main-row',
           2 => 4,
+          3 => 5,
         ),
         'parent' => 'canvas',
       ),
@@ -166,6 +273,25 @@ function quora_panel_default_page_manager_pages() {
         'class' => '',
         'hide_empty' => 0,
       ),
+      5 => array(
+        'type' => 'row',
+        'contains' => 'region',
+        'children' => array(
+          0 => 'centerbottom',
+        ),
+        'parent' => 'main',
+        'class' => 'centerbottom',
+        'hide_empty' => 0,
+      ),
+      'centerbottom' => array(
+        'type' => 'region',
+        'title' => 'centerbottom',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => '5',
+        'class' => '',
+        'hide_empty' => 0,
+      ),
     ),
   );
   $display->panel_settings = array(
@@ -175,6 +301,7 @@ function quora_panel_default_page_manager_pages() {
       'centerleft' => NULL,
       'centerright' => NULL,
       'default' => NULL,
+      'centerbottom' => NULL,
     ),
     'style' => 'default',
   );
@@ -213,7 +340,7 @@ function quora_panel_default_page_manager_pages() {
   $display->panels['bottom'][0] = 'new-5f5d8a6e-17b0-4364-832d-c7ebc6b7f589';
   $pane = new stdClass();
   $pane->pid = 'new-ed5b618c-f106-4610-ab60-9e4f24cc1121';
-  $pane->panel = 'bottom';
+  $pane->panel = 'centerbottom';
   $pane->type = 'block';
   $pane->subtype = 'menu-menu-quora-footer';
   $pane->shown = TRUE;
@@ -229,14 +356,14 @@ function quora_panel_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 1;
+  $pane->position = 0;
   $pane->locks = array();
   $pane->uuid = 'ed5b618c-f106-4610-ab60-9e4f24cc1121';
   $display->content['new-ed5b618c-f106-4610-ab60-9e4f24cc1121'] = $pane;
-  $display->panels['bottom'][1] = 'new-ed5b618c-f106-4610-ab60-9e4f24cc1121';
+  $display->panels['centerbottom'][0] = 'new-ed5b618c-f106-4610-ab60-9e4f24cc1121';
   $pane = new stdClass();
   $pane->pid = 'new-741f9a74-8777-45f6-a854-fd6ed69c1bbd';
-  $pane->panel = 'bottom';
+  $pane->panel = 'centerbottom';
   $pane->type = 'block';
   $pane->subtype = 'menu-menu-quora-footer2';
   $pane->shown = TRUE;
@@ -252,11 +379,11 @@ function quora_panel_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 2;
+  $pane->position = 1;
   $pane->locks = array();
   $pane->uuid = '741f9a74-8777-45f6-a854-fd6ed69c1bbd';
   $display->content['new-741f9a74-8777-45f6-a854-fd6ed69c1bbd'] = $pane;
-  $display->panels['bottom'][2] = 'new-741f9a74-8777-45f6-a854-fd6ed69c1bbd';
+  $display->panels['centerbottom'][1] = 'new-741f9a74-8777-45f6-a854-fd6ed69c1bbd';
   $pane = new stdClass();
   $pane->pid = 'new-f88d6521-c3f0-4acd-be58-552fe5fef709';
   $pane->panel = 'centerleft';

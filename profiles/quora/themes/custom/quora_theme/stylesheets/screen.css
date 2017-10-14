@@ -88,20 +88,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   letter-spacing: 1px;
   font-size: 19px;
   font-weight: 400;
-  margin: 8px 0 32px;
+  margin: 8px 0 50px;
   color: #999;
   text-align: center;
   word-wrap: break-word;
   font-family: 'q_serif',Georgia,Times,"Times New Roman",serif;
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 .panels-flexible-region .pane-formblock-user-register {
   margin-left: 25px;
 }
-/* line 39, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 .panels-flexible-region .pane-formblock-user-register #edit-link {
   text-align: center;
+  margin-left: 65px;
 }
 /* line 41, ../sass/screen.scss */
 .panels-flexible-region .pane-formblock-user-register #edit-link .anchor_link {
@@ -112,16 +113,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   width: 46%;
 }
-/* line 49, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
+.panels-flexible-region .pane-formblock-user-register .first_fname #field-first-name-add-more-wrapper {
+  width: 108%;
+}
+/* line 52, ../sass/screen.scss */
 .panels-flexible-region .pane-formblock-user-register .last_lname {
   float: right;
   width: 54%;
 }
-/* line 53, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
+.panels-flexible-region .pane-formblock-user-register .clearfix {
+  margin-bottom: -14px;
+}
+/* line 59, ../sass/screen.scss */
 .panels-flexible-region .pane-formblock-user-register .form-wrapper {
   width: 93%;
 }
-/* line 56, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .panels-flexible-region .pane-formblock-user-register .form-type-textfield > label,
 .panels-flexible-region .pane-formblock-user-register .form-type-password > label {
   font-family: "Helvetica Neue";
@@ -130,21 +139,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 65, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .panels-flexible-region .pane-formblock-user-register .form-item #custom_text {
   font-weight: 400;
   font-family: "Helvetica Neue";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.4;
   color: #999;
   word-wrap: break-word;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .panels-flexible-region .hybridauth-widget-wrapper .first {
   width: 150px;
+  margin-bottom: 8px;
 }
-/* line 81, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .panels-flexible-region .hybridauth-widget-wrapper .first .hybridauth-facebook {
   width: 186% !important;
   background-image: url("/profiles/quora/themes/custom/quora_theme/images/p3.png");
@@ -153,12 +163,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   opacity: 1;
   margin-left: 28px;
 }
-/* line 90, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .panels-flexible-region .hybridauth-widget-wrapper .last {
   width: 180px;
   margin-bottom: 58px;
 }
-/* line 93, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .panels-flexible-region .hybridauth-widget-wrapper .last .hybridauth-google {
   width: 150% !important;
   background-image: url("/profiles/quora/themes/custom/quora_theme/images/p2.png");
@@ -166,7 +176,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 56px;
   margin-left: -129px;
 }
-/* line 101, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .panels-flexible-region .hybridauth-widget-wrapper .last .hybridauth-icon-hybridauth-32 {
   display: block;
   float: left;
@@ -175,33 +185,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   opacity: 1;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .panel-pane {
   margin-bottom: 18px;
 }
-/* line 114, ../sass/screen.scss */
-.panel-pane .login-by-email {
+/* line 123, ../sass/screen.scss */
+.panel-pane .pane-content .login-by-email {
   margin-left: 31px;
   color: #999;
   font-size: 15px;
 }
-/* line 119, ../sass/screen.scss */
-.panel-pane .login-by-email > a {
+/* line 128, ../sass/screen.scss */
+.panel-pane .pane-content .login-by-email > a {
   color: #2b6dad;
 }
 
-/* line 125, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .panels-flexible-region-inside-last .pane-1 {
-  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
   margin-bottom: 0px;
   padding: 11px;
 }
-/* line 129, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .panels-flexible-region-inside-last .pane-1 .quora_chinese_language {
   margin-left: 247px;
   color: #2b6dad;
 }
-/* line 134, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .panels-flexible-region-inside-last .pane-2 {
   padding: 28px;
   height: auto;
@@ -212,11 +222,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top: 1px solid #e2e2e2;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .inside .panels-flexible-row-last {
   border-top: 1px solid #e2e2e2;
 }
-/* line 150, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .inside #edit-name--2,
 .inside #edit-pass,
 .inside #edit-pass--2,
@@ -234,8 +244,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: 1px solid #e2e2e2;
   box-shadow: inset 0 1px 1px rgba(200, 200, 200, 0.3);
   transition: border-color .2s;
+  margin-top: 9px;
 }
-/* line 168, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .inside #edit-submit, .inside #edit-submit--2 {
   border-radius: 5px;
   background-color: #3e78ad;
@@ -244,57 +255,66 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 35;
   width: 65;
   margin-left: 228px;
+  margin-top: -10px;
 }
-/* line 177, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 .inside #edit-actions {
   margin-bottom: -40px;
 }
-/* line 180, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .inside #edit-actions--2 {
   margin-top: -6px;
 }
 
-/* line 184, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 .panels-flexible-region-1-centerleft {
   border-right: thin solid silver;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .description,
 .form-required {
   display: none;
 }
 
-/* line 192, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .pane-user-login .pane-content {
   margin-left: 10px;
 }
-/* line 195, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
+.pane-user-login .pane-content .form-actions {
+  margin-top: -12px;
+}
+/* line 209, ../sass/screen.scss */
+.pane-user-login .pane-content .clearfix {
+  margin-top: -18px;
+}
+/* line 211, ../sass/screen.scss */
 .pane-user-login .pane-content .clearfix a {
   color: #929292;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 .panels-flexible-region-4-centerleft {
   border-right: thin solid silver;
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .pane-menu-menu-quora-footer .pane-content,
 .pane-menu-menu-quora-footer2 .pane-content {
   text-align: center;
 }
-/* line 209, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .pane-menu-menu-quora-footer .pane-content .menu,
 .pane-menu-menu-quora-footer2 .pane-content .menu {
   display: inline-flex;
 }
-/* line 211, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 .pane-menu-menu-quora-footer .pane-content .menu .leaf,
 .pane-menu-menu-quora-footer2 .pane-content .menu .leaf {
   list-style: none;
 }
-/* line 213, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .pane-menu-menu-quora-footer .pane-content .menu .leaf a,
 .pane-menu-menu-quora-footer2 .pane-content .menu .leaf a {
   color: #929292;
@@ -302,23 +322,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 14px;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 .front {
   background-color: #FAFAFA;
 }
-/* line 225, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .front .container .block-menu {
   background-color: #FAFAFA;
 }
 
-/* line 232, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 .toolbar .page #header,
 .toolbar .page .block-superfish,
 .toolbar .page ul, .toolbar .page li {
   background-color: white;
 }
 
-/* line 242, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .views-exposed-form .views-exposed-widget .views-widget #edit-field-tags-tid {
   width: 254px;
+}
+
+/* line 265, ../sass/screen.scss */
+.centerbottom .clearfix {
+  background-color: #f7f7f7;
+}
+/* line 267, ../sass/screen.scss */
+.centerbottom .clearfix .panels-flexible-region-last {
+  margin-top: 10px;
+}
+/* line 270, ../sass/screen.scss */
+.centerbottom .clearfix .panels-flexible-region-last .pane-menu-menu-quora-footer2 .pane-content {
+  margin-top: -15px;
 }
