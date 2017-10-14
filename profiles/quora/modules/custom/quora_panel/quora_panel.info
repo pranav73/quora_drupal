@@ -42,6 +42,7 @@ features[menu_links][] = main-menu_notifications:<front>
 features[menu_links][] = main-menu_quora:home_page
 features[node][] = question
 features[page_manager_handlers][] = node_edit__panel_context_6aab83dd-4b10-42bb-9ac5-ea2d45aa668e
+features[page_manager_pages][] = home_page
 features[page_manager_pages][] = quora
 features[taxonomy][] = tags
 features[views_view][] = related_questions
