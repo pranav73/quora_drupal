@@ -68,6 +68,9 @@
       font-weight: bold;
     }
     .form-item {
+      a:hover {
+        text-decoration: none;
+      }
       #custom_text {
         font-weight: 400;
         font-family: "Helvetica Neue";
