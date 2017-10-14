@@ -134,7 +134,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .panels-flexible-region .pane-formblock-user-register .form-type-textfield > label,
 .panels-flexible-region .pane-formblock-user-register .form-type-password > label {
   font-family: "Helvetica Neue";
-  font-size: 14px;
+  font-size: 13px;
   color: #666;
   text-transform: uppercase;
   font-weight: bold;
@@ -149,13 +149,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   word-wrap: break-word;
 }
 
-/* line 85, ../sass/screen.scss */
-.panels-flexible-region .hybridauth-widget-wrapper .first {
+/* line 87, ../sass/screen.scss */
+.panels-flexible-region .hybridauth-widget-wrapper .item-list .first {
   width: 150px;
   margin-bottom: 8px;
 }
-/* line 88, ../sass/screen.scss */
-.panels-flexible-region .hybridauth-widget-wrapper .first .hybridauth-facebook {
+/* line 90, ../sass/screen.scss */
+.panels-flexible-region .hybridauth-widget-wrapper .item-list .first .hybridauth-facebook {
   width: 186% !important;
   background-image: url("/profiles/quora/themes/custom/quora_theme/images/p3.png");
   margin-top: 17px;
@@ -163,21 +163,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   opacity: 1;
   margin-left: 28px;
 }
-/* line 97, ../sass/screen.scss */
-.panels-flexible-region .hybridauth-widget-wrapper .last {
+/* line 99, ../sass/screen.scss */
+.panels-flexible-region .hybridauth-widget-wrapper .item-list .last {
   width: 180px;
   margin-bottom: 58px;
 }
-/* line 100, ../sass/screen.scss */
-.panels-flexible-region .hybridauth-widget-wrapper .last .hybridauth-google {
+/* line 102, ../sass/screen.scss */
+.panels-flexible-region .hybridauth-widget-wrapper .item-list .last .hybridauth-google {
   width: 150% !important;
   background-image: url("/profiles/quora/themes/custom/quora_theme/images/p2.png");
   margin-top: 5px;
   height: 56px;
   margin-left: -129px;
 }
-/* line 108, ../sass/screen.scss */
-.panels-flexible-region .hybridauth-widget-wrapper .last .hybridauth-icon-hybridauth-32 {
+/* line 110, ../sass/screen.scss */
+.panels-flexible-region .hybridauth-widget-wrapper .item-list .last .hybridauth-icon-hybridauth-32 {
   display: block;
   float: left;
   width: 32px;
@@ -185,33 +185,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   opacity: 1;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 .panel-pane {
   margin-bottom: 18px;
 }
-/* line 123, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .panel-pane .pane-content .login-by-email {
   margin-left: 31px;
   color: #999;
   font-size: 15px;
 }
-/* line 128, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .panel-pane .pane-content .login-by-email > a {
   color: #2b6dad;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .panels-flexible-region-inside-last .pane-1 {
   border-top: 1px solid #e2e2e2;
   margin-bottom: 0px;
   padding: 11px;
 }
-/* line 139, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .panels-flexible-region-inside-last .pane-1 .quora_chinese_language {
   margin-left: 247px;
   color: #2b6dad;
 }
-/* line 144, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .panels-flexible-region-inside-last .pane-2 {
   padding: 28px;
   height: auto;
@@ -222,14 +222,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top: 1px solid #e2e2e2;
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .inside .panels-flexible-row-last {
   border-top: 1px solid #e2e2e2;
 }
-/* line 160, ../sass/screen.scss */
-.inside #edit-name--2,
+/* line 162, ../sass/screen.scss */
 .inside #edit-pass,
-.inside #edit-pass--2,
 .inside #edit-field-first-name-und-0-value,
 .inside #edit-field-last-name-und-0-value,
 .inside #edit-mail,
@@ -237,7 +235,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: black;
   background-color: #F6F6F6;
   border-radius: 3px;
-  height: 23;
+  height: 22px;
   box-sizing: border-box;
   min-height: 27px;
   outline: 0;
@@ -247,8 +245,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: 9px;
 }
 /* line 179, ../sass/screen.scss */
+.inside #edit-name--2,
+.inside #edit-pass--2 {
+  height: 35px;
+  border-radius: 3px;
+  font-size: 15px;
+  line-height: 1.4;
+  padding-left: 8px;
+  padding-right: 8px;
+  min-height: 30px;
+  margin-bottom: 8px;
+  background-color: #EEE;
+  color: black;
+}
+/* line 192, ../sass/screen.scss */
 .inside #edit-submit, .inside #edit-submit--2 {
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: #3e78ad;
   opacity: .5;
   color: white;
@@ -256,65 +268,71 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 65;
   margin-left: 228px;
   margin-top: -10px;
+  border: 1px solid #3a66ad;
+  padding: 3px 7px 4px 7px;
 }
-/* line 189, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .inside #edit-actions {
   margin-bottom: -40px;
 }
-/* line 192, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .inside #edit-actions--2 {
   margin-top: -6px;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .panels-flexible-region-1-centerleft {
   border-right: thin solid silver;
 }
 
-/* line 199, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .description,
 .form-required {
   display: none;
 }
 
-/* line 204, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
+.pane-user-login .pane-title {
+  margin-left: 9px;
+}
+/* line 222, ../sass/screen.scss */
 .pane-user-login .pane-content {
   margin-left: 10px;
 }
-/* line 206, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .pane-user-login .pane-content .form-actions {
   margin-top: -12px;
 }
-/* line 209, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 .pane-user-login .pane-content .clearfix {
   margin-top: -18px;
 }
-/* line 211, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .pane-user-login .pane-content .clearfix a {
   color: #929292;
 }
 
-/* line 217, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 .panels-flexible-region-4-centerleft {
   border-right: thin solid silver;
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .pane-menu-menu-quora-footer .pane-content,
 .pane-menu-menu-quora-footer2 .pane-content {
   text-align: center;
 }
-/* line 225, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 .pane-menu-menu-quora-footer .pane-content .menu,
 .pane-menu-menu-quora-footer2 .pane-content .menu {
   display: inline-flex;
 }
-/* line 227, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .pane-menu-menu-quora-footer .pane-content .menu .leaf,
 .pane-menu-menu-quora-footer2 .pane-content .menu .leaf {
   list-style: none;
 }
-/* line 229, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 .pane-menu-menu-quora-footer .pane-content .menu .leaf a,
 .pane-menu-menu-quora-footer2 .pane-content .menu .leaf a {
   color: #929292;
@@ -322,36 +340,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 14px;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 .front {
   background-color: #FAFAFA;
 }
-/* line 241, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .front .container .block-menu {
   background-color: #FAFAFA;
 }
 
-/* line 248, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .toolbar .page #header,
 .toolbar .page .block-superfish,
 .toolbar .page ul, .toolbar .page li {
   background-color: white;
 }
 
-/* line 258, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 .views-exposed-form .views-exposed-widget .views-widget #edit-field-tags-tid {
   width: 254px;
 }
 
-/* line 265, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .centerbottom .clearfix {
   background-color: #f7f7f7;
 }
-/* line 267, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .centerbottom .clearfix .panels-flexible-region-last {
   margin-top: 10px;
 }
-/* line 270, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 .centerbottom .clearfix .panels-flexible-region-last .pane-menu-menu-quora-footer2 .pane-content {
   margin-top: -15px;
 }
