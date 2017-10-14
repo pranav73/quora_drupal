@@ -36,8 +36,8 @@
   .pane-formblock-user-register {
     margin-left: 25px;
     #edit-link {
-       text-align: center;
-       margin-left: 65px;
+      text-align: center;
+      margin-left: 65px;
       .anchor_link {
         color: #2b6dad;
       }
@@ -78,18 +78,16 @@
         line-height: 1.4;
         color: #999;
         word-wrap: break-word;
-        }
       }
     }
   }
-
-  .panels-flexible-region {
-    .hybridauth-widget-wrapper {
-      .item-list {
-
-       .first {
-         width : 150px;
-         margin-bottom: 8px;
+}
+.panels-flexible-region {
+  .hybridauth-widget-wrapper {
+    .item-list {
+      .first {
+        width : 150px;
+        margin-bottom: 8px;
         .hybridauth-facebook {
           width: 186% !important;
           background-image: url("/profiles/quora/themes/custom/quora_theme/images/p3.png");
@@ -109,7 +107,6 @@
           height: 56px;
           margin-left: -129px;
         }
-
         .hybridauth-icon-hybridauth-32 {
           display: block;
           float: left;
@@ -135,82 +132,79 @@
     }
   }
 }
-
-  .panels-flexible-region-inside-last {
-    .pane-1 {
-      border-top: 1px solid #e2e2e2;
-      margin-bottom: 0px;
-      padding: 11px;
-      .quora_chinese_language {
-        margin-left: 247px;
-        color: #2b6dad;
-      }
-    }
-    .pane-2 {
-      padding: 28px;
-      height: auto;
-      background-color: rgb(247, 247, 247);
-      color: #339;
-      opacity: 50;
-      font-size: 15px;
-      // text-align: center;
-      border-top: 1px solid #e2e2e2;
+.panels-flexible-region-inside-last {
+  .pane-1 {
+    border-top: 1px solid #e2e2e2;
+    margin-bottom: 0px;
+    padding: 11px;
+    .quora_chinese_language {
+      margin-left: 247px;
+      color: #2b6dad;
     }
   }
-
- .inside {
-    .panels-flexible-row-last {
-      border-top: 1px solid #e2e2e2;
-    }
-    #edit-pass,
-    #edit-field-first-name-und-0-value,
-    #edit-field-last-name-und-0-value,
-    #edit-mail,
-    #edit-password {
-      color: black;
-      background-color: #F6F6F6;
-      border-radius: 3px;
-      height: 22px;
-      box-sizing: border-box;
-      min-height: 27px;
-      outline: 0;
-      border: 1px solid #e2e2e2;
-      box-shadow: inset 0 1px 1px rgba(200,200,200,0.3);
-      transition: border-color .2s;
-      margin-top: 9px;
-    }
-    #edit-name--2,
-    #edit-pass--2 {
-      height : 35px;
-      border-radius: 3px;
-      font-size: 15px;
-      line-height: 1.4;
-      padding-left: 8px;
-      padding-right: 8px;
-      min-height: 30px;
-      margin-bottom: 8px;
-      background-color: #EEE;
-      color: black;
-    }
-    #edit-submit,#edit-submit--2 {
-      border-radius: 3px;
-      background-color: #3e78ad;
-      opacity: .5;
-      color: white;
-      height: 35;
-      width: 65;
-      margin-left: 228px;
-      margin-top: -10px;
-      border: 1px solid #3a66ad;
-      padding: 3px 7px 4px 7px;
-    }
-    #edit-actions {
-      margin-bottom: -40px;
-    }
-    #edit-actions--2 {
-      margin-top: -6px;
-    }
+  .pane-2 {
+    padding: 28px;
+    height: auto;
+    background-color: rgb(247, 247, 247);
+    color: #339;
+    opacity: 50;
+    font-size: 15px;
+    border-top: 1px solid #e2e2e2;
   }
+}
+.inside {
+  .panels-flexible-row-last {
+    border-top: 1px solid #e2e2e2;
+  }
+  #edit-pass,
+  #edit-field-first-name-und-0-value,
+  #edit-field-last-name-und-0-value,
+  #edit-mail,
+  #edit-password {
+    color: black;
+    background-color: #F6F6F6;
+    border-radius: 3px;
+    height: 22px;
+    box-sizing: border-box;
+    min-height: 27px;
+    outline: 0;
+    border: 1px solid #e2e2e2;
+    box-shadow: inset 0 1px 1px rgba(200,200,200,0.3);
+    transition: border-color .2s;
+    margin-top: 9px;
+  }
+  #edit-name--2,
+  #edit-pass--2 {
+    height : 35px;
+    border-radius: 3px;
+    font-size: 15px;
+    line-height: 1.4;
+    padding-left: 8px;
+    padding-right: 8px;
+    min-height: 30px;
+    margin-bottom: 8px;
+    background-color: #EEE;
+    color: black;
+  }
+  #edit-submit,#edit-submit--2 {
+    border-radius: 3px;
+    background-color: #3e78ad;
+    opacity: .5;
+    color: white;
+    height: 35;
+    width: 65;
+    margin-left: 228px;
+    margin-top: -10px;
+    border: 1px solid #3a66ad;
+    padding: 3px 7px 4px 7px;
+  }
+  #edit-actions {
+    margin-bottom: -40px;
+  }
+  #edit-actions--2 {
+    margin-top: -6px;
+  }
+}
 .panels-flexible-region-1-centerleft {
   border-right:thin solid silver;
 }
@@ -227,10 +221,10 @@
     .form-actions {
       margin-top: -12px;
     }
-   .clearfix {
-     margin-top: -18px;
-     a {
-      color: #929292;
+    .clearfix {
+      margin-top: -18px;
+      a {
+        color: #929292;
       }
     }
   }
@@ -238,7 +232,6 @@
 .panels-flexible-region-4-centerleft {
     border-right:thin solid silver;
 }
-
 .pane-menu-menu-quora-footer,
 .pane-menu-menu-quora-footer2 {
   .pane-content {
@@ -269,7 +262,7 @@
     #header,
     .block-superfish,
     ul,li {
-          background-color: white;
+      background-color: white;
     }
   }
 }

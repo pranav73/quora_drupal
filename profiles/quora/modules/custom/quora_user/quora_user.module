@@ -9,45 +9,38 @@
  */
 function quora_user_form_user_register_form_alter(&$form, &$form_state, $form_id) {
   drupal_add_js(drupal_get_path('module', 'quora_user') .'/js/quora_user.js', 'file');
-
-   $form['account']['pass']['#type'] = 'password';
-   $form['account']['pass']['#title'] = 'Password';
-   $form['account']['pass']['#size'] = 35;
-
-   $form['cutomtext'] = array(
+  $form['account']['pass']['#type'] = 'password';
+  $form['account']['pass']['#title'] = 'Password';
+  $form['account']['pass']['#size'] = 35;
+  $form['cutomtext'] = array(
     '#type' => 'item',
     '#markup' => '<div id="custom_text"><label>By clicking "Sign Up" you indicate that you have read and agree to the Terms of Service and Privacy Policy.</label></div>',
     '#weight' => 99,
-    );
+  );
+  $form['link'] = array(
+    '#type' => 'item',
+    '#markup' => '<a id="show-login-social" href="#" class="anchor_link">Cancel</a>',
+    '#weight' => 100,
+  );
+  $form['actions']['submit']['#value'] = t('Sign Up');
+  $form['mail']['#size'] = 30;
+  $form['field_first_name']['#prefix'] = '<div class="first_fname">';
+  $form['field_first_name']['#suffix'] = '</div>';
+  $form['field_last_name']['#prefix'] = '<div class="last_lname">';
+  $form['field_last_name']['#suffix'] = '</div><div class="clearfix"></div>';
+}
 
-    $form['link'] = array(
-     '#type' => 'item',
-     '#markup' => '<a id="show-login-social" href="#" class="anchor_link">Cancel</a>',
-     '#weight' => 100,
-     );
-
-    $form['actions']['submit']['#value'] = t('Sign Up');
-    $form['mail']['#size'] = 30;
-
-    $form['field_first_name']['#prefix'] = '<div class="first_fname">';
-    $form['field_first_name']['#suffix'] = '</div>';
-    $form['field_last_name']['#prefix'] = '<div class="last_lname">';
-    $form['field_last_name']['#suffix'] = '</div><div class="clearfix"></div>';
-
-   }
-
- /**
-  * Implements hook_block_alter().
-  * Implements form_user_login_block_alter() function to alter fields.
-  */
-  function quora_theme_form_user_login_block_alter(&$form, &$form_state, $form_id) {
-    $form['name']['#size'] = 30;
-    $form['name']['#title'] = '';
-    $form['name']['#attributes']['placeholder'] = 'Email';
-    $form['pass']['#size'] = 30;
-    $form['pass']['#title'] = '';
-    $form['pass']['#attributes']['placeholder'] = 'Password';
-    $markup = l(t('Forgot password?'), 'user/password');
-    $markup = '<div class="clearfix">' . $markup . '</div>';
-    $form['links']['#markup'] = $markup;
- }
+/**
+ * Implements hook_form_formID_alter().
+ */
+function quora_theme_form_user_login_block_alter(&$form, &$form_state, $form_id) {
+  $form['name']['#size'] = 30;
+  $form['name']['#title'] = '';
+  $form['name']['#attributes']['placeholder'] = 'Email';
+  $form['pass']['#size'] = 30;
+  $form['pass']['#title'] = '';
+  $form['pass']['#attributes']['placeholder'] = 'Password';
+  $markup = l(t('Forgot password?'), 'user/password');
+  $markup = '<div class="clearfix">' . $markup . '</div>';
+  $form['links']['#markup'] = $markup;
+}
