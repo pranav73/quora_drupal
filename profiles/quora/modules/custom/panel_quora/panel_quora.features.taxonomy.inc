@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * quora_panel_feature.features.taxonomy.inc
+ * panel_quora.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function quora_panel_feature_taxonomy_default_vocabularies() {
+function panel_quora_taxonomy_default_vocabularies() {
   return array(
     'tags' => array(
       'name' => 'Tags',

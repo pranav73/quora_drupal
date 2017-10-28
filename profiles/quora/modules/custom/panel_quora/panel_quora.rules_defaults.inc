@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * quora_panel_feature.rules_defaults.inc
+ * panel_quora.rules_defaults.inc
  */
 
 /**
  * Implements hook_default_rules_configuration().
  */
-function quora_panel_feature_default_rules_configuration() {
+function panel_quora_default_rules_configuration() {
   $items = array();
   $items['rules_home_page'] = entity_import('rules_config', '{ "rules_home_page" : {
       "LABEL" : "Home_page",

@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * quora_panel.pages_default.inc
+ * panel_quora.pages_default.inc
  */
 
 /**
  * Implements hook_default_page_manager_handlers().
  */
-function quora_panel_default_page_manager_handlers() {
+function panel_quora_default_page_manager_handlers() {
   $export = array();
 
   $handler = new stdClass();
@@ -113,7 +113,7 @@ function quora_panel_default_page_manager_handlers() {
 /**
  * Implements hook_default_page_manager_pages().
  */
-function quora_panel_default_page_manager_pages() {
+function panel_quora_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;

@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * quora_panel_feature.features.field_instance.inc
+ * panel_quora.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function quora_panel_feature_field_default_field_instances() {
+function panel_quora_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-question-field_tags'.

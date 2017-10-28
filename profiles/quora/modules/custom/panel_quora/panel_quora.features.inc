@@ -1,17 +1,20 @@
 <?php
 /**
  * @file
- * quora_panel_feature.features.inc
+ * panel_quora.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function quora_panel_feature_ctools_plugin_api($module = NULL, $api = NULL) {
+function panel_quora_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "captcha" && $api == "captcha") {
     return array("version" => "1");
   }
   if ($module == "page_manager" && $api == "pages_default") {
+    return array("version" => "1");
+  }
+  if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
 }
@@ -19,14 +22,14 @@ function quora_panel_feature_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_views_api().
  */
-function quora_panel_feature_views_api($module = NULL, $api = NULL) {
+function panel_quora_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
 
 /**
  * Implements hook_node_info().
  */
-function quora_panel_feature_node_info() {
+function panel_quora_node_info() {
   $items = array(
     'question' => array(
       'name' => t('Question'),

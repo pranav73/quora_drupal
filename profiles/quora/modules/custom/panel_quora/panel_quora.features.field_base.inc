@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * quora_panel.features.field_base.inc
+ * panel_quora.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function quora_panel_field_default_field_bases() {
+function panel_quora_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_first_name'.

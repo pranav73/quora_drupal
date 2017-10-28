@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Panel Quora feature.
+ */
+
+include_once 'panel_quora.features.inc';
