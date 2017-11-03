@@ -157,34 +157,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 92, ../sass/screen.scss */
-.panels-flexible-region .hybridauth-widget-wrapper .item-list .first {
+.panels-flexible-region .hybridauth-widget-wrapper .item-list .last {
   width: 150px;
-  margin-bottom: 8px;
+  margin-bottom: -15px;
 }
 /* line 95, ../sass/screen.scss */
-.panels-flexible-region .hybridauth-widget-wrapper .item-list .first .hybridauth-facebook {
+.panels-flexible-region .hybridauth-widget-wrapper .item-list .last .hybridauth-facebook {
   width: 186% !important;
   background-image: url("/profiles/quora/themes/custom/quora_theme/images/p3.png");
-  margin-top: 17px;
   height: 45px;
   opacity: 1;
   margin-left: 28px;
 }
-/* line 104, ../sass/screen.scss */
-.panels-flexible-region .hybridauth-widget-wrapper .item-list .last {
+/* line 103, ../sass/screen.scss */
+.panels-flexible-region .hybridauth-widget-wrapper .item-list .first {
   width: 180px;
-  margin-bottom: 58px;
 }
-/* line 107, ../sass/screen.scss */
-.panels-flexible-region .hybridauth-widget-wrapper .item-list .last .hybridauth-google {
+/* line 105, ../sass/screen.scss */
+.panels-flexible-region .hybridauth-widget-wrapper .item-list .first .hybridauth-google {
   width: 150% !important;
   background-image: url("/profiles/quora/themes/custom/quora_theme/images/p2.png");
-  margin-top: -116px;
   height: 56px;
   margin-left: 28px;
 }
-/* line 114, ../sass/screen.scss */
-.panels-flexible-region .hybridauth-widget-wrapper .item-list .last .hybridauth-icon-hybridauth-32 {
+/* line 111, ../sass/screen.scss */
+.panels-flexible-region .hybridauth-widget-wrapper .item-list .first .hybridauth-icon-hybridauth-32 {
   display: block;
   float: left;
   width: 32px;
@@ -192,39 +189,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   opacity: 1;
 }
 
-/* line 125, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .panel-pane {
   margin-left: 12px;
   margin-bottom: 18px;
 }
-/* line 130, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .panel-pane .pane-content .login-by-email {
   margin-left: 31px;
   color: #999;
   font-size: 13px;
-  margin-top: -80px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   line-height: 1.4;
 }
-/* line 138, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .panel-pane .pane-content .login-by-email > a {
   color: #2b6dad;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .panels-flexible-region-inside-last .pane-1 {
   border-top: 1px solid #e2e2e2;
   margin-bottom: 0px;
   padding: 11px;
 }
-/* line 148, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .panels-flexible-region-inside-last .pane-1 .quora_chinese_language {
   margin-left: 215px;
   color: #2b6dad;
   text-decoration: none;
   font-size: 14px;
 }
-/* line 155, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .panels-flexible-region-inside-last .pane-2 {
   padding: 28px;
   height: auto;
@@ -235,12 +231,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top: 1px solid #e2e2e2;
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .inside .panels-flexible-row-last {
   margin-top: -9px;
   border-top: 1px solid #e2e2e2;
 }
-/* line 170, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .inside #edit-pass,
 .inside #edit-field-first-name-und-0-value,
 .inside #edit-field-last-name-und-0-value,
@@ -258,7 +254,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: border-color .2s;
   margin-top: 9px;
 }
-/* line 187, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 .inside #edit-name--2,
 .inside #edit-pass--2 {
   font-size: 15px;
@@ -275,7 +271,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 18px;
   width: 93%;
 }
-/* line 203, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .inside #edit-submit, .inside #edit-submit--2 {
   border-radius: 3px;
   background-color: #3e78ad;
@@ -288,71 +284,71 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: 1px solid #3a66ad;
   padding: 3px 7px 4px 7px;
 }
-/* line 215, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .inside #edit-actions {
   margin-bottom: -40px;
 }
-/* line 218, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .inside #edit-actions--2 {
   margin-top: -6px;
   margin-left: -23px;
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .panels-flexible-region-1-centerleft {
   border-right: thin solid silver;
 }
 
-/* line 226, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 .description,
 .form-required {
   display: none;
 }
 
-/* line 231, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 .pane-user-login .pane-title {
   margin-left: 9px;
 }
-/* line 234, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 .pane-user-login .pane-content {
   margin-left: 10px;
 }
-/* line 236, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .pane-user-login .pane-content .form-actions {
   margin-top: -12px;
 }
-/* line 239, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 .pane-user-login .pane-content .clearfix {
   margin-top: -18px;
 }
-/* line 241, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .pane-user-login .pane-content .clearfix a {
   color: #929292;
   font-size: 15px;
   line-height: 1.4;
 }
 
-/* line 249, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .panels-flexible-region-4-centerleft {
   border-right: thin solid silver;
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .pane-menu-menu-quora-footer .pane-content,
 .pane-menu-menu-quora-footer2 .pane-content {
   text-align: center;
 }
-/* line 256, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .pane-menu-menu-quora-footer .pane-content .menu,
 .pane-menu-menu-quora-footer2 .pane-content .menu {
   display: inline-flex;
 }
-/* line 258, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .pane-menu-menu-quora-footer .pane-content .menu .leaf,
 .pane-menu-menu-quora-footer2 .pane-content .menu .leaf {
   list-style: none;
 }
-/* line 260, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 .pane-menu-menu-quora-footer .pane-content .menu .leaf a,
 .pane-menu-menu-quora-footer2 .pane-content .menu .leaf a {
   color: rgba(175, 175, 175, 0.95);
@@ -360,52 +356,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 14px;
 }
 
-/* line 269, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 .front {
   background-color: #FAFAFA;
 }
-/* line 272, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .front .container .block-menu {
   background-color: #FAFAFA;
 }
 
-/* line 279, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 .toolbar .page #header,
 .toolbar .page .block-superfish,
 .toolbar .page ul, .toolbar .page li {
   background-color: white;
 }
 
-/* line 289, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .views-exposed-form .views-exposed-widget .views-widget #edit-field-tags-tid {
   width: 254px;
 }
 
-/* line 296, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 .centerbottom .clearfix {
   border-radius: 6px;
   background-color: #f7f7f7;
 }
-/* line 299, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 .centerbottom .clearfix .panels-flexible-region-last {
   margin-top: 10px;
 }
-/* line 302, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .centerbottom .clearfix .panels-flexible-region-last .pane-menu-menu-quora-footer2 .pane-content {
   margin-top: -15px;
 }
 
-/* line 312, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 .pane-content .hybridauth-widget-wrapper .item-list .hybridauth-widget {
   margin-top: 44px;
 }
 
-/* line 318, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 #edit-field-last-name-und-0-value {
   width: 88%;
 }
 
-/* line 321, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 #edit-submit {
   margin-left: 218px;
+}
+
+/* line 322, ../sass/screen.scss */
+.pane-content #custom_text .a1, .pane-content #custom_text .a2 {
+  color: #2b6dad;
+}
+
+/* line 327, ../sass/screen.scss */
+.pane-hybridauth-hybridauth {
+  margin-top: -42px;
 }

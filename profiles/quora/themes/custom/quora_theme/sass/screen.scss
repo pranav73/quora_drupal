@@ -89,25 +89,22 @@
 .panels-flexible-region {
   .hybridauth-widget-wrapper {
     .item-list {
-      .first {
+      .last {
         width : 150px;
-        margin-bottom: 8px;
+        margin-bottom: -15px;
         .hybridauth-facebook {
           width: 186% !important;
           background-image: url("/profiles/quora/themes/custom/quora_theme/images/p3.png");
-          margin-top: 17px;
           height: 45px;
           opacity: 1;
           margin-left: 28px;
         }
       }
-      .last {
+      .first {
         width: 180px;
-        margin-bottom: 58px;
         .hybridauth-google {
           width: 150% !important;
           background-image: url("/profiles/quora/themes/custom/quora_theme/images/p2.png");
-          margin-top: -116px;
           height: 56px;
           margin-left: 28px;
         }
@@ -131,7 +128,6 @@
       margin-left: 31px;
       color: #999;
       font-size: 13px;
-      margin-top: -80px;
       font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
       line-height: 1.4;
     }
@@ -320,4 +316,14 @@
 }
 #edit-submit {
   margin-left: 218px;
+}
+.pane-content {
+  #custom_text {
+    .a1,.a2 {
+      color: #2b6dad;
+    }
+  }
+}
+.pane-hybridauth-hybridauth {
+  margin-top: -42px;
 }
